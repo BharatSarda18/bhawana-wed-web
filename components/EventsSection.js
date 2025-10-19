@@ -5,39 +5,40 @@ import { Calendar, Clock, MapPin } from 'lucide-react';
 const EventsSection = () => {
   const events = [
     {
-      title: "Haldi & Lagan Ceremony",
-      date: "December 9, 2025",
-      time: "10:00 AM - 1:00 PM",
-      location: "Chhalani Palace, Bikaner",
-      description: "A traditional pre-wedding ritual where turmeric paste is applied to the bride and groom for its purifying and beautifying properties."
+      day: "Wednesday",
+      date: "10th December 2025",
+      description: "शुरुआत हल्दी से, मिलेंगे खुशी से",
+      title: "हल्दी और लगन समारोह",
+      time: "10:00 AM onwards"
+    },
+    
+    {
+      day: "Wednesday",
+      date: "10th December 2025",
+      description: "संगीत की रात, खुशियों की बारात",
+      title: "संगीत संध्या", 
+      time: "6:00 PM onwards"
     },
     {
-      title: "Mehndi Ceremony",
-      date: "December 9, 2025",
-      time: "4:00 PM - 9:00 PM",
-      location: "Chhalani Palace, Bikaner",
-      description: "An exciting ceremony where the bride's hands and feet are adorned with intricate henna designs symbolizing joy, beauty, and spiritual awakening."
+      day: "Thursday",
+      date: "11th December 2025",
+      description: "बत्तीसी लेके बहना आई, भाई बाँटे खूब बधाई",
+      title: "बत्तीसी", 
+      time: "10:00 AM onwards"
     },
     {
-      title: "Sangeet Night",
-      date: "December 10, 2025",
-      time: "7:00 PM - 12:00 AM",
-      location: "Chhalani Palace, Bikaner",
-      description: "A night of music, dance, and celebration where both families come together to enjoy performances and festivities."
+      day: "Thursday",
+      date: "11th December 2025",
+      description: "प्यारा वीरा, संग लेके आया है मायरा",
+      title: "मायरा", 
+      time: "11:00 AM onwards"
     },
     {
-      title: "Wedding Ceremony",
-      date: "December 11, 2025",
-      time: "11:00 AM - 3:00 PM",
-      location: "Chhalani Palace, Bikaner",
-      description: "The main wedding ceremony with all traditional Hindu rituals including Jaimala, Pheras, and Vidaai."
-    },
-    {
-      title: "Reception",
-      date: "December 11, 2025",
-      time: "7:00 PM - 11:00 PM",
-      location: "Chhalani Palace, Bikaner",
-      description: "A grand celebration with dinner, dancing, and entertainment to celebrate the newlyweds."
+      day: "Thursday",
+      date: "11th December 2025",
+      description: "सात जन्मों का साथ, सात वचनों के साथ",
+      title: "शबारात स्वागत एवं शुभ विवाह",
+      time: "8:00 PM onwards"
     }
   ];
 
@@ -53,15 +54,9 @@ const EventsSection = () => {
         >
           <h2 className="font-playfair text-wedding-maroon text-4xl font-bold mb-4">Wedding Events</h2>
           <div className="w-24 h-1 mx-auto bg-wedding-gold mb-6"></div>
-          <p className="font-poppins text-gray-700 max-w-2xl mx-auto">
-            Be part of our story as we step into forever.
-          </p>
         </motion.div>
 
-        <div className="relative max-w-4xl mx-auto">
-          {/* Timeline Connector */}
-          <div className="timeline-connector hidden md:block"></div>
-
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
           {events.map((event, index) => (
             <motion.div
               key={index}
@@ -69,33 +64,38 @@ const EventsSection = () => {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: index * 0.1 }}
               viewport={{ once: true }}
-              className={`flex timeline-item items-center mb-16 ${index % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'
-                }`}
+              className="bg-gradient-to-br from-wedding-ivory to-white rounded-xl shadow-lg overflow-hidden border border-wedding-gold border-opacity-20"
             >
-              {/* Timeline Ball */}
-              <div className="absolute left-1/2 transform -translate-x-1/2 z-10 hidden md:block">
-                <div className="w-6 h-6 rounded-full bg-wedding-gold"></div>
+              {/* Decorative top border */}
+              <div className="h-2 bg-gradient-to-r from-wedding-gold to-wedding-maroon"></div>
+              
+              <div className="p-6">
+                {/* Day */}
+                <p className="font-poppins text-wedding-maroon text-sm font-medium mb-1">
+                  {event.day}
+                </p>
+                
+                {/* Date */}
+                <p className="font-poppins text-gray-800 text-lg font-semibold mb-3">
+                  {event.date}
+                </p>
+                
+                {/* Hindi Description */}
+                <p className="font-poppins text-gray-700 text-sm mb-4 italic">
+                  {event.description}
+                </p>
+                
+                {/* Event Title */}
+                <h3 className="font-playfair text-wedding-maroon text-2xl font-bold mb-3">
+                  {event.title}
+                </h3>
+                
+                {/* Time */}
+                <p className="font-poppins text-wedding-gold text-base font-medium flex items-center gap-2">
+                  <Clock className="h-4 w-4" />
+                  {event.time}
+                </p>
               </div>
-
-              {/* Content */}
-              <div className={`md:w-5/12 ${index % 2 === 0 ? 'md:text-right md:pr-10' : 'md:text-left md:pl-10'}`}>
-                <div className="bg-wedding-ivory p-6 rounded-lg shadow-md">
-                  <h3 className="font-playfair text-wedding-maroon text-2xl font-bold mb-3">{event.title}</h3>
-                  <p className="font-poppins text-gray-600 mb-2 flex items-center gap-2 justify-center md:justify-start">
-                    <Calendar className="text-wedding-gold h-4 w-4" /> {event.date}
-                  </p>
-                  <p className="font-poppins text-gray-600 mb-2 flex items-center gap-2 justify-center md:justify-start">
-                    <Clock className="text-wedding-gold h-4 w-4" /> {event.time}
-                  </p>
-                  <p className="font-poppins text-gray-600 mb-3 flex items-center gap-2 justify-center md:justify-start">
-                    <MapPin className="text-wedding-gold h-4 w-4" /> {event.location}
-                  </p>
-                  <p className="font-poppins text-gray-700">{event.description}</p>
-                </div>
-              </div>
-
-              {/* Empty Space for Timeline Balance */}
-              <div className="md:w-5/12"></div>
             </motion.div>
           ))}
         </div>
