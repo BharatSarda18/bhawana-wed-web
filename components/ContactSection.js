@@ -59,7 +59,12 @@ const ContactSection = () => {
                 <p className="font-poppins text-base sm:text-lg font-semibold mb-1 break-words">{contact.name}</p>
                 <p className="font-poppins text-xs sm:text-sm flex items-center justify-center gap-1 sm:gap-2 break-all">
                   <Phone className="h-3 w-3 sm:h-4 sm:w-4 flex-shrink-0" /> 
-                  <span className="break-all">{contact.phone}</span>
+                  <a 
+                    href={`tel:${contact.phone.replace(/\s/g, '')}`} 
+                    className="break-all hover:text-wedding-gold transition-colors duration-300 cursor-pointer"
+                  >
+                    {contact.phone}
+                  </a>
                 </p>
               </div>
             ))}
