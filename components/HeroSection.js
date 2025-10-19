@@ -77,8 +77,15 @@ const HeroSection = () => {
           className="flex flex-col md:flex-row items-center justify-center gap-4 md:gap-8 mb-12"
         >
           <div className="flex items-center">
-            <Calendar className="text-wedding-maroon h-5 w-5 mr-2" />
-            <span className="font-poppins text-2xl text-wedding-maroon">December 11, 2025</span>
+            <a 
+              href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Bhawana%20%26%20Lalit%27s%20Wedding&dates=20251211T110000Z/20251211T220000Z&details=Join%20us%20for%20the%20wedding%20celebration%20of%20Bhawana%20and%20Lalit%20on%20December%2011%2C%202025%20in%20Bikaner&location=Bikaner%2C%20Rajasthan%2C%20India"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center font-poppins text-2xl text-wedding-maroon hover:text-wedding-gold transition-colors duration-300 cursor-pointer decoration-wedding-gold hover:decoration-wedding-maroon"
+            >
+              <Calendar className="h-5 w-5 mr-2" />
+              December 11, 2025
+            </a>
           </div>
         </motion.div>
         
