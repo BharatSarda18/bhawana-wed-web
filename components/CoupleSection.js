@@ -12,9 +12,7 @@ const CoupleSection = () => {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          {/* <h2 className="font-playfair text-wedding-maroon text-4xl font-bold mb-4">The lovely couple</h2> */}
-          {/* <div className="w-24 h-1 mx-auto bg-wedding-gold mb-6"></div> */}
-          <p className="font-poppins text-gray-700 max-w-2xl mx-auto text-2xl text-wedding-maroon">
+          <p className="font-playfair italic text-gray-700 max-w-2xl mx-auto text-2xl text-wedding-maroon">
              You are cordially invited to grace the auspicious occasion of our children's wedding.
           </p>
         </motion.div>
