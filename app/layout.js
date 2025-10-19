@@ -1,7 +1,7 @@
-import { Inter } from 'next/font/google'
+
 import './globals.css';
 
-const inter = Inter({ subsets: ['latin'],display:'swap' })
+
 
 export const metadata = {
   title: `Bhawana & Lalit's Wedding | December 11, 2025`,
@@ -15,7 +15,7 @@ export default function RootLayout({ children }) {
       <head>
         <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:ital@1&family=Noto+Sans+Devanagari:wght@400;500;600;700&display=swap" rel="stylesheet" />
       </head>
-      <body className={inter.className}>{children}</body>
+      <body>{children}</body>
     </html>
   )
 }
