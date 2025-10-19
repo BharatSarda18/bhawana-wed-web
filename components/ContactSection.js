@@ -19,13 +19,13 @@ const ContactSection = () => {
     {
       title: "Bride's Uncle",
       name: "Kamal Kumar Sarda",
-      phone: "+91 98765 43212",
+      phone: "+91 7427836877",
       icon: <Users className="text-white h-6 w-6" />
     },
     {
       title: "Bride's Brother",
       name: "Bharat Sarda",
-      phone: "+91 76270647279",
+      phone: "+91 7627064727",
       icon: <Users className="text-white h-6 w-6" />
     }
   ];
