@@ -14,7 +14,7 @@ const VenueSection = () => {
                     viewport={{ once: true }}
                     className="text-center mb-16"
                 >
-                    <h2 className="font-playfair text-wedding-maroon text-4xl font-bold mb-4">Wedding Venue</h2>
+                    <h2 className="font-playfair text-wedding-maroon text-4xl font-bold mb-4">Wedding Venues</h2>
                     <div className="w-24 h-1 mx-auto bg-wedding-gold mb-6"></div>
 
                 </motion.div>
