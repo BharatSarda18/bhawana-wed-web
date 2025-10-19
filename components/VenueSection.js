@@ -29,7 +29,7 @@ const VenueSection = () => {
                         className="md:w-1/2 bg-white rounded-lg shadow-lg overflow-hidden"
                     >
                         <div className="w-full h-80 bg-gray-300">
-                        
+                        sfavf
                             <img className="h-80 w-full"  src="/images/chhalaniPalace.jpeg" alt="Chhalani Palace"/>
                         </div>
                         <div className="p-6">
