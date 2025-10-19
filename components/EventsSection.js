@@ -9,7 +9,7 @@ const EventsSection = () => {
       date: "10th December 2025",
       description: "शुरुआत हल्दी से, मिलेंगे खुशी से",
       title: "हल्दी और लगन समारोह",
-      time: "10:00 AM onwards"
+      time: "9:00 AM onwards"
     },
     
     {
@@ -38,7 +38,7 @@ const EventsSection = () => {
       date: "11th December 2025",
       description: "सात जन्मों का साथ, सात वचनों के साथ",
       title: "शबारात स्वागत एवं शुभ विवाह",
-      time: "8:00 PM onwards"
+      time: "7:00 PM onwards"
     }
   ];
 
