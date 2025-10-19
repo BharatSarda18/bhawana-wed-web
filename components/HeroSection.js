@@ -46,7 +46,7 @@ const HeroSection = () => {
   return (
     <section id="home" className="relative min-h-screen mandala-bg flex items-center justify-center px-4 py-20">
       <div className="z-10 text-center text-white">
-        <motion.div 
+        {/* <motion.div 
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
@@ -54,7 +54,7 @@ const HeroSection = () => {
         >
           <h3 className="font-poppins text-xl md:text-2xl uppercase tracking-widest mb-4">Save the Date</h3>
           <div className="h-0.5 w-16 mx-auto bg-wedding-gold"></div>
-        </motion.div>
+        </motion.div> */}
         
         <motion.div 
           initial={{ opacity: 0, y: 20 }}
@@ -62,7 +62,9 @@ const HeroSection = () => {
           transition={{ duration: 0.8, delay: 0.4 }}
           className="mb-8"
         >
-          <h1 className="font-great-vibes text-6xl md:text-8xl text-wedding-gold mb-4">Bhawana & Lalit</h1>
+          <h1 className="font-great-vibes text-6xl md:text-8xl text-wedding-gold mb-4">Bhawna</h1>
+          <h1 className="font-great-vibes text-6xl md:text-8xl text-wedding-gold mb-4">Weds</h1>
+          <h1 className="font-great-vibes text-6xl md:text-8xl text-wedding-gold mb-4">Lalit</h1>
           <h2 className="font-playfair text-2xl md:text-4xl">Together With Their Families</h2>
           <h3 className="font-poppins text-xl md:text-2xl mt-3">Invite You To Their Wedding Celebration</h3>
         </motion.div>
@@ -75,7 +77,7 @@ const HeroSection = () => {
         >
           <div className="flex items-center">
             <Calendar className="text-wedding-gold h-5 w-5 mr-2" />
-            <span className="font-poppins">December 11, 2023</span>
+            <span className="font-poppins">December 11, 2025</span>
           </div>
           <div className="hidden md:block w-1 h-1 rounded-full bg-wedding-gold"></div>
           <div className="flex items-center">

@@ -33,22 +33,13 @@ const Header = () => {
                 }`}
         >
             <div className="container mx-auto px-4">
-                <div className="flex justify-between items-center">
-                    {/* Logo */}
-                    <a href="#home" className="text-white flex items-center">
-                        <span className={`font-great-vibes text-wedding-gold text-3xl transition-all duration-300 ${isScrolled ? 'text-2xl' : 'text-3xl'}`}>
-                            B & L
-                        </span>
-                    </a>
-
-
-                    <div className="text-white flex items-center">
-                        <span className={`font-great-vibes text-wedding-gold text-3xl transition-all duration-300 ${isScrolled ? 'text-2xl' : 'text-3xl'}`}>
+                <div className="relative flex justify-end items-center">
+                    {/* Centered Text */}
+                    <div className="absolute left-1/2 transform -translate-x-1/2 text-white flex items-center">
+                        <span className={`font-great-vibes text-wedding-gold text-3xl font-bold italic transition-all duration-300 ${isScrolled ? 'text-2xl' : 'text-3xl'}`}>
                             श्री गणेशाय नमः
                         </span>
                     </div>
-
-
 
                     {/* Desktop Navigation */}
                     <nav className="hidden md:flex space-x-8">
@@ -62,8 +53,6 @@ const Header = () => {
                             </a>
                         ))}
                     </nav>
-
-
 
                     {/* Mobile Navigation Button */}
                     <button

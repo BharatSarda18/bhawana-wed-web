@@ -13,7 +13,7 @@ const CoupleSection = () => {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="font-playfair text-wedding-maroon text-4xl font-bold mb-4">Happy Couple</h2>
+          <h2 className="font-playfair text-wedding-maroon text-4xl font-bold mb-4">The lovely couple</h2>
           <div className="w-24 h-1 mx-auto bg-wedding-gold mb-6"></div>
           <p className="font-poppins text-gray-700 max-w-2xl mx-auto">
              We would be honored to have you join us on special day.
@@ -41,7 +41,7 @@ const CoupleSection = () => {
             <h3 className="font-playfair text-wedding-maroon text-2xl font-bold mb-2">Bhawana Sarda</h3>
             <h4 className="font-poppins text-wedding-gold text-lg mb-4">The Bride</h4>
             <p className="font-poppins text-gray-700 max-w-sm mx-auto mb-4">
-               Granddaughter of Late Shri Lookaran Ji Sarda and Shrimati Geeta Devi Sarda, Daughter of Shri Ashok Kumar Ji Sarda and Shrimati ChandraKala Devi Sarda.
+            Granddaughter of Late Shri Lookaran Ji Sarda and Smt. Geeta Devi Sarda, Daughter of Shri Ashok Kumar Ji Sarda and Smt. Chandrakala Devi Sarda.
             </p>
           </motion.div>
 
@@ -81,7 +81,7 @@ const CoupleSection = () => {
             <h3 className="font-playfair text-wedding-maroon text-2xl font-bold mb-2">Lalit Mundhara</h3>
             <h4 className="font-poppins text-wedding-gold text-lg mb-4">The Groom</h4>
             <p className="font-poppins text-gray-700 max-w-sm mx-auto mb-4">
-            Grandson of Late Shri xyz Ji Mundhara and Shrimati xyz Devi Mundhara, Daughter of Shri Pawan Ji Mundhara and Shrimati xyz Devi Mundhara.
+            Grandson of Late Shri Madan gopal Ji Mundhara and Late Shrimati Sodra Devi Ji Mundhara, Son of Shri Pawan Ji Mundhara and Shrimati Chanda Devi Ji Mundhara.
             </p>
           </motion.div>
           
