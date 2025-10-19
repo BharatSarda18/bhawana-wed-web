@@ -50,10 +50,10 @@ const CoupleSection = () => {
           >
             <h3 className="font-playfair text-wedding-maroon text-3xl font-bold mb-2">Lalit</h3>
             <p className="font-poppins text-gray-700 max-w-sm mx-auto mb-4">
-            Grand S/o Late Smt. Sodhra Devi & Late Shri Madan Gopal Ji Mundhara <br></br>D/o Smt. Chanda Devi & Shri Pawan Kumar Ji Mundhara.
+            Grand S/o Late Smt. Sodhra Devi & Late Shri Madan Gopal Ji Mundhra <br></br>D/o Smt. Chanda Devi & Shri Pawan Kumar Ji Mundhra.
             </p>
             {/* <p className="font-poppins text-gray-700 max-w-sm mx-auto mb-4">
-            Grandson of Late Shri Madan gopal Ji Mundhara and Late Shrimati Sodra Devi Ji Mundhara, Son of Shri Pawan Ji Mundhara and Shrimati Chanda Devi Ji Mundhara.
+            Grandson of Late Shri Madan gopal Ji Mundhra and Late Shrimati Sodra Devi Ji Mundhra, Son of Shri Pawan Ji Mundhra and Shrimati Chanda Devi Ji Mundhra.
             </p> */}
           </motion.div>
           
