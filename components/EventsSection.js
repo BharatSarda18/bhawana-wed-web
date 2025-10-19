@@ -1,6 +1,6 @@
 "use client"
 import { motion } from 'framer-motion';
-import { Calendar, Clock, MapPin } from 'lucide-react';
+import { Clock } from 'lucide-react';
 
 const EventsSection = () => {
   const events = [
@@ -37,7 +37,7 @@ const EventsSection = () => {
       day: "Thursday",
       date: "11th December 2025",
       description: "सात जन्मों का साथ, सात वचनों के साथ",
-      title: "शबारात स्वागत एवं शुभ विवाह",
+      title: "बारात स्वागत एवं शुभ विवाह",
       time: "7:00 PM onwards"
     }
   ];
@@ -69,7 +69,7 @@ const EventsSection = () => {
               {/* Decorative top border */}
               <div className="h-2 bg-gradient-to-r from-wedding-gold to-wedding-maroon"></div>
               
-              <div className="p-6">
+              <div className="p-6 text-center">
                 {/* Day */}
                 <p className="font-poppins text-wedding-maroon text-sm font-medium mb-1">
                   {event.day}
@@ -91,7 +91,7 @@ const EventsSection = () => {
                 </h3>
                 
                 {/* Time */}
-                <p className="font-poppins text-wedding-gold text-base font-medium flex items-center gap-2">
+                <p className="font-poppins text-wedding-gold text-base font-medium flex items-center justify-center gap-2">
                   <Clock className="h-4 w-4" />
                   {event.time}
                 </p>
