@@ -36,7 +36,7 @@ const Header = () => {
                 <div className="relative flex justify-end items-center">
                     {/* Centered Text */}
                     <div className="absolute left-1/2 transform -translate-x-1/2 text-white flex items-center">
-                        <span className={`font-great-vibes text-wedding-gold text-3xl font-bold italic transition-all duration-300 ${isScrolled ? 'text-2xl' : 'text-3xl'}`}>
+                        <span className={`font-playfair text-wedding-gold text-2xl md:text-3xl font-bold italic transition-all duration-300 ${isScrolled ? 'text-xl md:text-2xl' : 'text-2xl md:text-3xl'}`}>
                             श्री गणेशाय नमः
                         </span>
                     </div>

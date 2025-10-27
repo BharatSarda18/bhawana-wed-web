@@ -10,6 +10,7 @@ import EventsSection from "@/components/EventsSection";
 import VenueSection from "@/components/VenueSection";
 import ContactSection from "@/components/ContactSection";
 import Footer from "@/components/Footer";
+import GaneshJiSection from '@/components/GaneshJiSection'
 
 export default function Home() {
   const pageRef = useRef();
@@ -51,7 +52,8 @@ export default function Home() {
     <>
       <div ref={pageRef}>
         <Header />
-        <HeroSection />
+        <GaneshJiSection/>
+      <HeroSection />
         <CoupleSection />
         <Divider />
         <EventsSection />

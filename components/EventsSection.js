@@ -62,9 +62,11 @@ const EventsSection = () => {
               key={index}
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
+              whileHover={{ y: -4, scale: 1.01 }}
+              whileTap={{ scale: 0.99 }}
               transition={{ duration: 0.6, delay: index * 0.1 }}
               viewport={{ once: true }}
-              className="bg-gradient-to-br from-wedding-ivory to-white rounded-xl shadow-lg overflow-hidden border border-wedding-gold border-opacity-20"
+              className="bg-gradient-to-br from-wedding-ivory to-white rounded-xl shadow-lg overflow-hidden border border-wedding-gold border-opacity-20 transform transition-all duration-300 ease-out hover:-translate-y-1 hover:border-opacity-40"
             >
               {/* Decorative top border */}
               <div className="h-2 bg-gradient-to-r from-wedding-gold to-wedding-maroon"></div>

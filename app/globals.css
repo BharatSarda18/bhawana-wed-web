@@ -25,6 +25,10 @@
     font-family: 'Poppins', sans-serif;
   }
   
+  .font-sanskrit {
+    font-family: 'Noto Sans Devanagari', 'Mukti', 'Lohit Devanagari', 'Sanskrit Text', 'Devanagari Sangam MN', 'Hiragino Sans', 'Arial Unicode MS', sans-serif;
+  }
+  
   .text-wedding-red {
     color: #C41E3A;
   }
