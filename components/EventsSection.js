@@ -1,6 +1,5 @@
 "use client"
 import { motion } from 'framer-motion';
-import { Clock } from 'lucide-react';
 
 const EventsSection = () => {
   const events = [
@@ -45,7 +44,7 @@ const EventsSection = () => {
   return (
     <section id="events" className="py-20 bg-white">
       <div className="container mx-auto px-4">
-        <motion.div
+        <div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
@@ -53,12 +52,12 @@ const EventsSection = () => {
           className="text-center mb-16"
         >
           <h2 className="font-playfair text-wedding-maroon text-4xl font-bold mb-4">Wedding Events</h2>
-          <div className="w-24 h-1 mx-auto bg-wedding-gold mb-6"></div>
-        </motion.div>
+          {/* <div className="w-24 h-1 mx-auto bg-wedding-gold mb-6"></div> */}
+        </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
           {events.map((event, index) => (
-            <motion.div
+            <div
               key={index}
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -93,12 +92,14 @@ const EventsSection = () => {
                 </h3>
                 
                 {/* Time */}
-                <p className="font-poppins text-wedding-gold text-base font-medium flex items-center justify-center gap-2">
-                  <Clock className="h-4 w-4" />
-                  {event.time}
-                </p>
+                <div className="font-poppins text-wedding-gold text-base font-medium flex items-center justify-center gap-2">
+                  <div className="flex items-center">
+                   
+                    <span className="leading-none">{event.time}</span>
+                  </div>
+                </div>
               </div>
-            </motion.div>
+            </div>
           ))}
         </div>
       </div>
