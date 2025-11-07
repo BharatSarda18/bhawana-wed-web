@@ -22,36 +22,20 @@ const VenueSection = () => {
                 <div className="flex flex-col md:flex-row items-center md:items-stretch gap-8" style={{ pageBreakInside: 'avoid', breakInside: 'avoid' }}>
                     {/* Wedding Ceremony Venue */}
                     <div
-                        initial={{ opacity: 0, x: -20 }}
+                        initial={{ opacity: 0, x: 20 }}
                         whileInView={{ opacity: 1, x: 0 }}
-                        transition={{ duration: 0.6, delay: 0.2 }}
+                        transition={{ duration: 0.6, delay: 0.4 }}
                         viewport={{ once: true }}
-                        className="md:w-1/2 bg-white rounded-lg shadow-lg overflow-hidden"
+                        className="md:w-1/2 bg-white rounded-lg shadow-lg overflow-hidden w-full"
                         style={{ pageBreakInside: 'avoid', breakInside: 'avoid' }}
                     >
                         <div className="w-full h-80 bg-gray-300 cursor-pointer" onClick={() => window.open("https://maps.app.goo.gl/Xg2pjywPTSdcUymz8", "_blank")}>
-                            <img className="h-80 w-full"  src="/images/chhalaniPalace.jpeg" alt="Chhalani Palace"/>
+                            <img className="h-80 w-full" src="/images/chhalaniPalace.jpeg" alt="Daga Guest House" />
                         </div>
                         <div className="p-6">
-                            <p className="font-poppins text-gray-600 mb-6 flex items-start gap-2">
-                                {/* <MapPin className="text-wedding-gold h-4 w-4 mt-0.5 flex-shrink-0" /> */}
-                                Chhalani Palace, Gangashahar, Bikaner
+                            <p className="font-poppins text-gray-600 font-bold flex items-start gap-2">
+                                Chhalani Palace, Bhinasar, Bikaner
                             </p>
-                            {/* <div className="flex justify-center">
-                                <a
-                                    href="https://maps.app.goo.gl/Xg2pjywPTSdcUymz8"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    className="font-poppins text-wedding-gold border border-wedding-gold hover:bg-wedding-gold hover:text-white transition duration-300 rounded-full py-2 px-6"
-                                    style={{ 
-                                        display: 'block',
-                                        textAlign: 'center',
-                                        margin: '0 auto'
-                                    }}
-                                >
-                                    Get Directions →
-                                </a>
-                            </div> */}
                         </div>
                     </div>
 
@@ -61,33 +45,16 @@ const VenueSection = () => {
                         whileInView={{ opacity: 1, x: 0 }}
                         transition={{ duration: 0.6, delay: 0.4 }}
                         viewport={{ once: true }}
-                        className="md:w-1/2 bg-white rounded-lg shadow-lg overflow-hidden"
+                        className="md:w-1/2 bg-white rounded-lg shadow-lg overflow-hidden w-full"
                         style={{ pageBreakInside: 'avoid', breakInside: 'avoid' }}
                     >
                         <div className="w-full h-80 bg-gray-300 cursor-pointer" onClick={() => window.open("https://maps.app.goo.gl/Yps6nKGFReHo7e3z5", "_blank")}>
-                            <img className="h-80 w-full" src="/images/dagaGuestHouse.jpg" alt="Daga Guest House"/>
+                            <img className="h-80 w-full" src="/images/dagaGuestHouse.jpg" alt="Daga Guest House" />
                         </div>
                         <div className="p-6">
-                            <p className="font-poppins text-gray-600 mb-6 flex items-start gap-2">
-                                {/* <MapPin className="text-wedding-gold h-4 w-4 mt-0.5 flex-shrink-0" />  */}
+                            <p className="font-poppins text-gray-600 font-bold flex items-start gap-2">
                                 Daga Guest House, Gangashahar, Bikaner
                             </p>
-
-                            {/* <div className="flex justify-center">
-                                <a
-                                    href="https://maps.app.goo.gl/Yps6nKGFReHo7e3z5"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    className="font-poppins text-wedding-gold border border-wedding-gold hover:bg-wedding-gold hover:text-white transition duration-300 rounded-full py-2 px-6"
-                                    style={{ 
-                                        display: 'block',
-                                        textAlign: 'center',
-                                        margin: '0 auto'
-                                    }}
-                                >
-                                    Get Directions →
-                                </a>
-                            </div> */}
                         </div>
                     </div>
                 </div>
