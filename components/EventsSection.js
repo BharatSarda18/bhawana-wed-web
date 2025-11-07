@@ -1,37 +1,5 @@
-"use client"
-import { motion } from 'framer-motion';
-
 const EventsSection = () => {
   const events = [
-    {
-      day: "Wednesday",
-      date: "10th December 2025",
-      description: "शुरुआत हल्दी से, मिलेंगे खुशी से",
-      title: "हल्दी और लगन समारोह",
-      time: "9:00 AM onwards"
-    },
-    
-    {
-      day: "Wednesday",
-      date: "10th December 2025",
-      description: "संगीत की रात, खुशियों की बारात",
-      title: "संगीत संध्या", 
-      time: "6:00 PM onwards"
-    },
-    {
-      day: "Thursday",
-      date: "11th December 2025",
-      description: "बत्तीसी लेके बहना आई, भाई बाँटे खूब बधाई",
-      title: "बत्तीसी", 
-      time: "10:00 AM onwards"
-    },
-    {
-      day: "Thursday",
-      date: "11th December 2025",
-      description: "प्यारा वीरा, संग लेके आया है मायरा",
-      title: "मायरा", 
-      time: "11:00 AM onwards"
-    },
     {
       day: "Thursday",
       date: "11th December 2025",
@@ -51,11 +19,10 @@ const EventsSection = () => {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="font-playfair text-wedding-maroon text-4xl font-bold mb-4">Wedding Events</h2>
-          {/* <div className="w-24 h-1 mx-auto bg-wedding-gold mb-6"></div> */}
+          <h2 className="font-playfair text-wedding-maroon text-4xl font-bold mb-4">Wedding Schedule</h2>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+        <div className="grid grid-cols-1 mx-auto max-w-3xl">
           {events.map((event, index) => (
             <div
               key={index}
@@ -67,34 +34,27 @@ const EventsSection = () => {
               viewport={{ once: true }}
               className="bg-gradient-to-br from-wedding-ivory to-white rounded-xl shadow-lg overflow-hidden border border-wedding-gold border-opacity-20 transform transition-all duration-300 ease-out hover:-translate-y-1 hover:border-opacity-40"
             >
-              {/* Decorative top border */}
               <div className="h-2 bg-gradient-to-r from-wedding-gold to-wedding-maroon"></div>
               
               <div className="p-6 text-center">
-                {/* Day */}
                 <p className="font-poppins text-wedding-maroon text-sm font-medium mb-1">
                   {event.day}
                 </p>
                 
-                {/* Date */}
                 <p className="font-poppins text-gray-800 text-lg font-semibold mb-3">
                   {event.date}
                 </p>
                 
-                {/* Hindi Description */}
                 <p className="font-poppins text-gray-700 text-sm mb-4 italic">
                   {event.description}
                 </p>
                 
-                {/* Event Title */}
                 <h3 className="font-playfair text-wedding-maroon text-2xl font-bold mb-3">
                   {event.title}
                 </h3>
                 
-                {/* Time */}
                 <div className="font-poppins text-wedding-gold text-base font-medium flex items-center justify-center gap-2">
                   <div className="flex items-center">
-                   
                     <span className="leading-none">{event.time}</span>
                   </div>
                 </div>

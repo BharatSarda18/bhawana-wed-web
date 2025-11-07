@@ -31,68 +31,57 @@ export default function Home() {
     });
 
     const imgData = canvas.toDataURL("image/png");
-    
+
     // Calculate PDF dimensions based on content
     const imgWidth = canvas.width;
     const imgHeight = canvas.height;
-    
+
     // Convert pixels to mm (assuming 96 DPI)
     const pixelsToMm = 25.4 / 96;
     const pdfWidth = imgWidth * pixelsToMm;
     const pdfHeight = imgHeight * pixelsToMm;
-    
+
     // Create PDF with custom dimensions matching content
     const pdf = new jsPDF({
       orientation: pdfWidth > pdfHeight ? "landscape" : "portrait",
       unit: "mm",
       format: [pdfWidth, pdfHeight]
     });
-    
+
     // Add the image to PDF at full size (no scaling needed)
     pdf.addImage(imgData, "PNG", 0, 0, pdfWidth, pdfHeight);
-    
-    // Create clickable areas for venue sections (working method)
-    const halfWidth = pdfWidth / 2;
-    const venueSectionHeight = pdfHeight * 0.6;
-    
-    try {
-      // First venue (Chhalani Palace) - left half
-      if (typeof pdf.addLink === 'function') {
-        const link1 = pdf.addLink(0, 0, halfWidth, venueSectionHeight, "https://maps.app.goo.gl/Xg2pjywPTSdcUymz8");
-        const link2 = pdf.addLink(halfWidth, 0, halfWidth, venueSectionHeight, "https://maps.app.goo.gl/Yps6nKGFReHo7e3z5");
-        console.log('Created venue links using addLink method:', { link1, link2 });
-      } else {
-        pdf.link(0, 0, halfWidth, venueSectionHeight, {
-          url: "https://maps.app.goo.gl/Xg2pjywPTSdcUymz8"
-        });
-        
-        pdf.link(halfWidth, 0, halfWidth, venueSectionHeight, {
-          url: "https://maps.app.goo.gl/Yps6nKGFReHo7e3z5"
-        });
-        console.log('Created venue links using link method');
+
+    // Add clean links text at the bottom of PDF (horizontal layout)
+    const linksTextY = pdfHeight - 8; // 8mm from bottom
+    const fontSize = 10; // Increased font size
+
+    pdf.setFontSize(fontSize);
+
+    // Clean links with display text and URLs - arranged horizontally
+    const cleanLinks = [
+      { text: "Chhalani Palace Map", url: "https://maps.app.goo.gl/Xg2pjywPTSdcUymz8" }
+    ];
+
+    // Set text color to white and font to bold
+    pdf.setTextColor(255, 255, 255); // White color
+    pdf.setFont('helvetica', 'bold'); // Bold font
+
+    cleanLinks.forEach((link, index) => {
+      if (typeof link === 'object' && link.url) {
+        // Calculate text width to center the link
+        const textWidth = pdf.getTextWidth(link.text);
+        const linkX = (pdfWidth - textWidth) / 2; // Center the text
+
+        // For clickable link, add text first
+        pdf.text(link.text, linkX, linksTextY);
+        // Then create clickable link area that opens in new tab
+        const textHeight = fontSize * 0.35; // Approximate text height
+        pdf.link(linkX, linksTextY - textHeight, textWidth, textHeight, { url: link.url });
       }
-      
-      // Add Instagram link for footer section
-      const footerHeight = pdfHeight * 0.15; // Approximate footer height (15% of total)
-      const footerY = pdfHeight - footerHeight; // Position at bottom
-      
-      if (typeof pdf.addLink === 'function') {
-        const instagrContactSectionamLink = pdf.addLink(0, footerY, pdfWidth, footerHeight, "https://www.instagram.com/lalit_bha_gaya?igsh=MWV1NzhqY2Z4ZzA5dQ==");
-        console.log('Created Instagram link using addLink method:', instagramLink);
-      } else {
-        pdf.link(0, footerY, pdfWidth, footerHeight, {
-          url: "https://www.instagram.com/lalit_bha_gaya?igsh=MWV1NzhqY2Z4ZzA5dQ=="
-        });
-        console.log('Created Instagram link using link method');
-      }
-      
-    } catch (error) {
-      console.error('Error creating PDF links:', error);
-    }
-    
-    console.log('PDF dimensions:', { pdfWidth, pdfHeight, halfWidth, venueSectionHeight });
-    
+    });
+
     pdf.save("wedding-invite.pdf");
+
   };
 
   return (
@@ -104,10 +93,11 @@ export default function Home() {
         <CoupleSection />
         <Divider />
         <EventsSection />
+        <Divider />
         <VenueSection />
         <Divider />
         <ContactSection />
-        <Footer />
+        {/* <Footer /> */}
       </div>
 
       <button
