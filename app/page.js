@@ -59,8 +59,8 @@ export default function Home() {
     // Clean links with display text and URLs - arranged horizontally
     const cleanLinks = [
       { text: "Chhalani Palace Map", url: "https://maps.app.goo.gl/Xg2pjywPTSdcUymz8" },
-      { text: "Daga Guest House Map", url: "https://maps.app.goo.gl/Yps6nKGFReHo7e3z5" },
-      { text: "Bhawana & Lalit's Wedding Page", url: "https://www.instagram.com/lalit_bha_gaya?igsh=MWV1NzhqY2Z4ZzA5dQ==" }
+      { text: "Daga Guest House Map", url: "https://maps.app.goo.gl/YBdkvRGEqtAhV4Dd7?g_st=aw" },
+      { text: "Join us on Instagram: @lalit_bha_gaya", url: "https://www.instagram.com/lalit_bha_gaya?igsh=MWV1NzhqY2Z4ZzA5dQ==" }
     ];
 
     // Set text color to white and font to bold
@@ -123,7 +123,7 @@ export default function Home() {
     // Clean links with display text and URLs
     const cleanLinks = [
       { text: "Chhalani Palace Map", url: "https://maps.app.goo.gl/Xg2pjywPTSdcUymz8" },
-      { text: "Daga Guest House Map", url: "https://maps.app.goo.gl/Yps6nKGFReHo7e3z5" },
+      { text: "Daga Guest House Map", url: "https://maps.app.goo.gl/YBdkvRGEqtAhV4Dd7?g_st=aw" },
       { text: "Bhawana & Lalit's Wedding", url: "https://www.instagram.com/lalit_bha_gaya?igsh=MWV1NzhqY2Z4ZzA5dQ==" }
     ];
 

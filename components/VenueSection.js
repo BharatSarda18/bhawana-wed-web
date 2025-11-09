@@ -33,8 +33,11 @@ const VenueSection = () => {
                             <img className="h-80 w-full" src="/images/chhalaniPalace.jpeg" alt="Daga Guest House" />
                         </div>
                         <div className="p-6">
-                            <p className="font-poppins text-gray-600 font-bold flex items-start gap-2">
+                            <p className="font-poppins text-gray-600 font-bold flex items-start gap-2 mb-2">
                                 Chhalani Palace, Bhinasar, Bikaner
+                            </p>
+                            <p className="font-poppins text-gray-700 text-sm font-semibold italic">
+                                All wedding functions will be held here.
                             </p>
                         </div>
                     </div>
@@ -48,7 +51,7 @@ const VenueSection = () => {
                         className="md:w-1/2 bg-white rounded-lg shadow-lg overflow-hidden w-full"
                         style={{ pageBreakInside: 'avoid', breakInside: 'avoid' }}
                     >
-                        <div className="w-full h-80 bg-gray-300 cursor-pointer" onClick={() => window.open("https://maps.app.goo.gl/Yps6nKGFReHo7e3z5", "_blank")}>
+                        <div className="w-full h-80 bg-gray-300 cursor-pointer" onClick={() => window.open("https://maps.app.goo.gl/YBdkvRGEqtAhV4Dd7?g_st=aw", "_blank")}>
                             <img className="h-80 w-full" src="/images/dagaGuestHouse.jpg" alt="Daga Guest House" />
                         </div>
                         <div className="p-6">
