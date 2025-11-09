@@ -1,6 +1,6 @@
 "use client"
 import { motion } from "framer-motion";
-import { MapPin, ArrowRight } from "lucide-react";
+import { MapPin, ArrowRight, Info } from "lucide-react";
 // import dagaPalace from "../assets/images/dagaGuestHouse.jpg"
 
 const VenueSection = () => {
@@ -26,15 +26,18 @@ const VenueSection = () => {
                         whileInView={{ opacity: 1, x: 0 }}
                         transition={{ duration: 0.6, delay: 0.2 }}
                         viewport={{ once: true }}
-                        className="md:w-1/2 bg-white rounded-lg shadow-lg overflow-hidden"
+                        className="w-full bg-white rounded-lg shadow-lg overflow-hidden"
                     >
                         <div className="w-full h-80 bg-gray-300">
-                            <img className="h-80 w-full"  src="/images/chhalaniPalace.jpeg" alt="Chhalani Palace"/>
+                            <img className="h-80 w-full" src="/images/chhalaniPalace.jpeg" alt="Chhalani Palace" />
                         </div>
                         <div className="p-6">
-                            <p className="font-poppins text-gray-600 mb-6 flex items-start gap-2">
+                            <p className="font-poppins text-gray-600 flex items-start gap-2 font-bold">
                                 <MapPin className="text-wedding-gold h-4 w-4 mt-0.5 flex-shrink-0" />Chhalani Palace, Gangashahar, Bikaner
                             </p>
+                            <div className="bg-wedding-gold/10 text-wedding-gold pb-2 pt-0.5 ps-6 rounded-md text-xs font-medium mb-3 italic">
+                                All wedding functions will be held here
+                            </div>
                             <a
                                 href="https://maps.app.goo.gl/Xg2pjywPTSdcUymz8"
                                 target="_blank"
@@ -52,19 +55,19 @@ const VenueSection = () => {
                         whileInView={{ opacity: 1, x: 0 }}
                         transition={{ duration: 0.6, delay: 0.4 }}
                         viewport={{ once: true }}
-                        className="md:w-1/2 bg-white rounded-lg shadow-lg overflow-hidden"
+                        className="w-full bg-white rounded-lg shadow-lg overflow-hidden"
                     >
                         <div className="w-full h-80 bg-gray-300">
-                            <img className="h-80 w-full" src="/images/dagaGuestHouse.jpg" alt="Daga Guest House"/>
+                            <img className="h-80 w-full" src="/images/dagaGuestHouse.jpg" alt="Daga Guest House" />
 
                         </div>
                         <div className="p-6">
-                            <p className="font-poppins text-gray-600 mb-6 flex items-start gap-2">
+                            <p className="font-poppins text-gray-600 mb-10 flex items-start gap-2 font-bold">
                                 <MapPin className="text-wedding-gold h-4 w-4 mt-0.5 flex-shrink-0" /> Daga Guest House, Gangashahar, Bikaner
                             </p>
 
                             <a
-                                href="https://maps.app.goo.gl/Yps6nKGFReHo7e3z5"
+                                href="https://maps.app.goo.gl/YBdkvRGEqtAhV4Dd7?g_st=aw"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="inline-flex items-center font-poppins text-wedding-gold border border-wedding-gold hover:bg-wedding-gold hover:text-white transition duration-300 rounded-full py-2 px-6"

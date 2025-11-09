@@ -17,6 +17,7 @@ export default function Home() {
       <CoupleSection />
       <Divider/>
       <EventsSection />
+      <Divider/>
       <VenueSection />
       <Divider/>
       <ContactSection />

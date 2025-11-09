@@ -114,7 +114,7 @@ const HeroSection = () => {
         >
           <a 
             href="#events" 
-            className="inline-block bg-wedding-gold hover:bg-opacity-80 transition duration-300 text-wedding-maroon font-poppins font-bold py-3 px-8 rounded-full"
+            className="inline-block bg-[#D4AF37] hover:bg-[#b38a07] border border-wedding-gold hover:text-wedding-maroon transition duration-300 text-wedding-maroon font-poppins font-bold py-3 px-8 rounded-full"
           >
             View Events
           </a>
