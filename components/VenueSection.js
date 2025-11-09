@@ -36,9 +36,9 @@ const VenueSection = () => {
                             <p className="font-poppins text-gray-600 font-bold flex items-start gap-2 mb-2">
                                 Chhalani Palace, Bhinasar, Bikaner
                             </p>
-                            <p className="font-poppins text-gray-700 text-sm font-semibold italic">
-                                All wedding functions will be held here.
-                            </p>
+                            <div className="bg-wedding-gold/10 text-wedding-gold font-medium rounded-md text-xs mb-3 italic">
+                                All wedding functions will be held here
+                            </div>
                         </div>
                     </div>
 
