@@ -52,7 +52,7 @@ export default function Home() {
 
     // Add clean links text at the bottom of PDF (horizontal layout)
     const linksTextY = pdfHeight - 8; // 8mm from bottom
-    const fontSize = 10; // Increased font size
+    const fontSize = 20; // Increased font size
 
     pdf.setFontSize(fontSize);
 
